@@ -17,13 +17,13 @@ import json
 # 2. Assign the Webex hard-coded access token to the variable accessToken.
 
 
-accessToken = "Bearer MDdhM2JjN2YtYmRlYi00MmRhLWI0YTYtYzU4ZGQ0OTJlYmRkMGRiN2MxN2MtMjI0_P0A1_99fbe3d9-f0b9-406c-acd1-95d84a3d0361" 
+accessToken = "Bearer <token>" 
 
 #######################################################################################
 # 3. Prepare GetParameters to get the latest message for messages API.
 
 # Defines a variable that will hold the roomId 
-roomIdToGetMessages = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWE2NGZkZjAtM2RjYS0xMWVmLThjZTAtYjdiOWNhYmQ1MjY4"
+roomIdToGetMessages = "<roomid>"
 
 while True:
     # always add 1 second of delay to the loop to not go over a rate limit of API calls
@@ -80,7 +80,7 @@ while True:
         openweatherGeoAPIGetParameters = {
             "q": location,
             "limit": 1,
-            "appid": "db8ae0de7c1583935893ca81e2bfc3f4",
+            "appid": "<appid>",
         }
 
 #######################################################################################       
@@ -109,7 +109,7 @@ while True:
                                 "limit": 1,
                                 "lat": locationLat,
                                 "lon": locationLng,
-                                "appid": "db8ae0de7c1583935893ca81e2bfc3f4"
+                                "appid": "appid"
                             }
 
 #######################################################################################
